@@ -17,6 +17,8 @@ nav {
 .card {
     padding: 3px;
     margin: 5px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .card-img-top {
@@ -41,6 +43,8 @@ nav {
 
 .card-footer i {
     padding-left: 10px;
+    cursor: pointer;
+    color: #fff;
 }
 
 #contactbody {
