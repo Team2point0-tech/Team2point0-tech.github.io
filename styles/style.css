@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 50px;
+    background: whitesmoke;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(109.5deg, rgba(76, 221, 242, 1) 11.2%, rgba(92, 121, 255, 1) 91.1%);
+}
+
+nav {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #000000;
+}
+
+.contact-info {
+    float: left;
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.card {
+    background: black;
+    border-radius: 10px;
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.07);
+    height: 300px;
+    border: 5px solid whitesmoke;
+    box-shadow: 0 20px 70px black;
+}
+
+.card-icon {
+    margin-top: 50px;
+    font-size: 28px;
+    background: radial-gradient(black, #56cfe1);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+}
+
+h3 {
+    color: #56cfe1;
+    font-size: 16px;
+}
+
+.card:hover .card-icon {
+    background: none;
+    color: #56cfe1;
+    transform: scale(1.6);
+}
+
+.card p {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.card:hover p {
+    max-height: 40px;
+    opacity: 1;
+}
+
+.card a {
+    color: peru;
+    text-decoration: none;
+}
+
+#exp {
+    padding: 8px;
+    background: whitesmoke;
+    border-radius: 5px;
+}
+
+#exp:hover {
+    background: radial-gradient(#56cfe1, black);
+    color: whitesmoke;
+    box-shadow: 0 2px 18px whitesmoke;
+}
+
+@media screen and (max-width:800px) {
+    .contact-info {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+}
